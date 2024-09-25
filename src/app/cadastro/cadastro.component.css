@@ -1,0 +1,252 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo da página inteira */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    margin: 0;
+    padding: 20px; /* Adiciona espaço extra em telas pequenas */
+  }
+  
+  /* Container principal da tela */
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    align-items: stretch;
+    min-height: 500px; /* Define uma altura mínima para o container */
+  }
+  
+  /* Estilo da seção de login à esquerda */
+  .login-section {
+    width: 50%;
+    padding: 40px;
+  }
+  
+  .login-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .login-section p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 30px;
+  }
+  
+  .login-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo dos campos de entrada */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Opção "Remember me" */
+  .options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .checkbox-container input {
+    margin-right: 8px;
+  }
+  
+  /* Botão de login */
+  .login-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Opção de criar conta */
+  .signup-option {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-option a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-option a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo da seção informativa à direita */
+  .info-section {
+    width: 50%;
+    background-color: #1d2f7d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .info-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info-section p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Estilo das imagens sobrepostas */
+  .overlay-icons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .overlay-icons img {
+    width: 100px;
+    margin-left: 10px;
+  }
+  
+  /* Responsividade */
+  
+  /* Tablets (telas entre 768px e 1024px) */
+  @media (max-width: 1024px) {
+    .container {
+      width: 90%;
+      flex-direction: column;
+    }
+  
+    .login-section, .info-section {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .info-section {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .info-section h2 {
+      font-size: 20px;
+    }
+  
+    .info-section p {
+      font-size: 14px;
+    }
+  
+    .overlay-icons {
+      position: static;
+      margin-top: 20px;
+    }
+  
+    .overlay-icons img {
+      width: 80px;
+    }
+  }
+  
+  /* Celulares (telas com largura máxima de 768px) */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .login-section, .info-section {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .login-section h1 {
+      font-size: 20px;
+    }
+  
+    .login-section p {
+      font-size: 14px;
+    }
+  
+    .input-group input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .login-btn {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .signup-option {
+      font-size: 12px;
+    }
+  
+    .info-section {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .info-section h2 {
+      font-size: 18px;
+    }
+  
+    .info-section p {
+      font-size: 12px;
+    }
+  
+    .overlay-icons {
+      position: static;
+      margin-top: 15px;
+    }
+  
+    .overlay-icons img {
+      width: 60px;
+    }
+  }
+  
